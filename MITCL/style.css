@@ -1,0 +1,173 @@
+body
+{   
+	background-image: url("img/unnamed.jpg");
+	background-size:100%;
+	font-family: 'Montserrat', sans-serif;
+	}
+     
+ .budget-left p
+      {
+      	position:absolute;
+      	left: 20px;
+      	top: 150px;
+      	font-size: 24px;
+      }
+.budget-left img
+    {
+    	height:140px;
+    	width: 140px;
+    	position: absolute;
+    	left: 20px;
+
+    }	
+.budget-right p
+      {
+      	position:absolute;
+      	right: 20px;
+      	top: 150px;
+      	font-size: 24px;
+      }
+.budget-right img
+    {
+    	height:140px;
+    	width: 140px;
+    	position: absolute;
+    	right: 20px;
+
+    }	
+.img-circle {
+    border-radius: 50%;
+}
+.pphoto {
+	border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 20px 20px 200px 200px;
+border: 5px ridge #000;
+}
+
+.crazy input[type=text], select {
+    width: 7%;
+    padding: 12px 20px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: absolute;
+    top:150px;
+    left:43%;
+}
+.crazy input[type=submit] {
+    width: 3%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 13px 0px;
+    border: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;    
+    cursor: pointer;
+    position: absolute;
+    left:49.5%;
+    top:150px;
+}
+
+.crazy input[type=submit]:hover {
+    background-color: #45a049;
+}
+.progressbar__label{
+    color:white !important;
+}
+.bech input[type=submit] {
+    width: 7%;
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    padding: 13px 0px;
+    border: none;
+    text-align: center;    
+    cursor: pointer;
+    
+}
+
+.bech input[type=submit]:hover {
+    background-color: #45a049;
+}
+.bech input[type=text], select {
+    width: 3%;
+    padding: 12px 10px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: absolute;
+    top:650px;
+    left:43%;
+  }
+/*--------------- FOR PROGRESS BARS*--------------------*/
+@keyframes 
+load { 0% {
+stroke-dashoffset:0
+}
+}
+
+/* Container */
+
+.progress {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+
+/* Item */
+
+.progress>li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #93A2AC;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2rem;
+}
+
+.progress:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;
+}
+
+.progress:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 3rem;
+  left: 0;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.progress svg {
+  width: 8rem;
+  height: 8rem;
+}
+
+.progress svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+}
+
+.progress svg:nth-child(2) path {
+  fill:none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: rgba(255, 255, 255, 0.9);
+  animation: load 10s;
+  
+}
